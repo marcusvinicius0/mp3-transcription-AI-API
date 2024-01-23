@@ -1,6 +1,8 @@
 import express from 'express';
 import routes from './routes.js';
 
+const PORT = 3000;
+
 class App {
   constructor() {
     this.app = express();
@@ -38,4 +40,7 @@ class App {
   }
 }
 
-export default new App().app;
+const app = new App().app;
+
+app.listen(PORT || 9001, () => console.log(`Listening on port ${PORT}`));
+
