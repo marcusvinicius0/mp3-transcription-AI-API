@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "devDependencies": {
     "nodemon": "^3.0.3",
