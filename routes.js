@@ -1,7 +1,7 @@
 import { Router } from "express";
 import multer from "multer";
-import { MockUsersController } from "./controllers/MockUsersController";
-import { speechToText } from "./speech-to-text";
+import { MockUsersController } from "./controllers/MockUsersController.js";
+import { speechToText } from "./speech-to-text.js";
 import path from "path";
 
 const routes = new Router();
