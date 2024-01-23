@@ -1,7 +1,6 @@
 import express from 'express';
 import routes from './routes.js';
-
-const PORT = 3000;
+import 'dotenv/config';
 
 class App {
   constructor() {
@@ -42,5 +41,5 @@ class App {
 
 const app = new App().app;
 
-app.listen(PORT || 9001, () => console.log(`Listening on port ${PORT}`));
+app.listen(process.env.PORT || 9001, () => console.log(`Listening on port ${process.env.PORT}`));
 
