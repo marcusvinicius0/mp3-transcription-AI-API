@@ -2,7 +2,8 @@ import axios from "axios";
 import fs from "fs";
 import "dotenv/config";
 
-const FormData = require("form-data");
+// const FormData = require("form-data");
+import FormData from "form-data";
 
 export const speechToText = async (file) => {
   const apiKey = process.env.EDEN_API_KEY;

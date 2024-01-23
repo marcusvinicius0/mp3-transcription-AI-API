@@ -9,6 +9,7 @@
   "name": "api",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "engines": {
     "node": "18.x"
   },
