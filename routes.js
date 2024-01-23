@@ -14,6 +14,8 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage, dest: "uploads/" });
 
+routes.get('/favicon.ico', (req, res) => res.status(204).send());
+
 routes.get("/", async (req, res, next) => {
   const healthCheck = {
     uptime: process.uptime(),
